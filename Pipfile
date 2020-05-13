@@ -1,0 +1,23 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+beautifulsoup4 = "*"
+certifi = "*"
+chardet = "*"
+idna = "*"
+requests = "*"
+rope = "*"
+selenium = "*"
+soupsieve = "*"
+urllib3 = "*"
+pylint = "*"
+pylint-plugin-utils = "*"
+autopep8 = "*"
+
+[requires]
+python_version = "3.7"
