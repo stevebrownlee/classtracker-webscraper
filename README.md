@@ -4,6 +4,8 @@
 
 Scrapes the various Foundations Course site profiles for each student and calculates how much each student has completed.
 
+![](./images/execution.gif)
+
 ## Requirements
 
 - Python 3.6+
@@ -28,3 +30,5 @@ Scrapes the various Foundations Course site profiles for each student and calcul
 1. When the program completes, there will be a `scores.csv` file created. Open that file.
 1. Copy pasta the contents into your cohort spreadsheet.
 1. As soon as you paste, a clipboard icon will appear in the lower-right hand corner of the data. Click that and choose _"Split text into columns"_.
+
+![](./images/copy-pasta.gif)

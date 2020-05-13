@@ -18,10 +18,16 @@ def main():
             student.codecademy_profile = items[3]
             student.freecodecamp_profile = items[4]
 
+            print(f'\nGathering data for {student.name}\n')
+
+            print('Scanning repl.it...')
             student.replit_points = scrape_replit(student.name, student.replit_profile) or 0
+            print('Scanning Codecademy...')
             student.codecademy_percent = scrape_codecademy(student.name, student.codecademy_profile) or 0
+            print('Scanning FreeCodeCamp...')
             student.freecodecamp_percent = scrape_freecodecamp(student.name, student.freecodecamp_profile) or 0
             students.append(student)
+            print(f'Results:\n{student}')
 
     with open('scores.csv', 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
