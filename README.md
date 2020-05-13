@@ -26,6 +26,7 @@ Scrapes the various Foundations Course site profiles for each student and calcul
 1. `pipenv shell` to activate environment
 1. Open the `students.tsv` file.
 1. Copy pasta the students you need from the **_Foundations Course Student Registration (Responses)_** [spreadsheet](https://docs.google.com/spreadsheets/d/1jlxGp0OINxtPsVrabffEP54ysRnHlhCi4CB2ZX1iwH8/edit?usp=sharing). Copy columns B-F.
+    ![](./images/tab-separated.png)
 1. `python main.py` to start the process.
 1. When the program completes, there will be a `scores.csv` file created. Open that file.
 1. Copy pasta the contents into your cohort spreadsheet.
