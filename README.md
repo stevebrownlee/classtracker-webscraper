@@ -40,14 +40,15 @@ If a student's progress is below the 50% mark across the board, the system will 
 
 Here is the default template.
 
-```txt
+---
+
 Hi Ryan,
 
 In a regular progress check for your cohort, I noticed that you haven't completed a significant percentage of the coursework yet. Here's what I can see from your profiles.
 
-FreeCodeCamp: 35% completed
-Codecademy: 10% completed
-repl.it: 23% completed
+* FreeCodeCamp: 35% completed
+* Codecademy: 10% completed
+* repl.it: 23% completed
 
 I'm concerned because the completion of the Foundations Course is crucial to you being prepared and being successful when your cohort starts. We assume that you have completed the work, and we hit the ground running. We don't spend time covering the fundamentals that the Foundations Course provides.
 
@@ -55,4 +56,5 @@ Please let me know if there's anything I can do to help you complete the work. I
 
 Best regards,
 Your name - Senior Instructor
-```
+
+---
