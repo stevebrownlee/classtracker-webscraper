@@ -33,3 +33,26 @@ Scrapes the various Foundations Course site profiles for each student and calcul
 1. As soon as you paste, a clipboard icon will appear in the lower-right hand corner of the data. Click that and choose _"Split text into columns"_.
 
 ![](./images/copy-pasta.gif)
+
+## Foundations Course Communication Email
+
+If a student's progress is below the 50% mark across the board, the system will generate a draft email to be sent out from your NSS email account.
+
+Here is the default template.
+
+```txt
+Hi Ryan,
+
+In a regular progress check for your cohort, I noticed that you haven't completed a significant percentage of the coursework yet. Here's what I can see from your profiles.
+
+FreeCodeCamp: 35% completed
+Codecademy: 10% completed
+repl.it: 23% completed
+
+I'm concerned because the completion of the Foundations Course is crucial to you being prepared and being successful when your cohort starts. We assume that you have completed the work, and we hit the ground running. We don't spend time covering the fundamentals that the Foundations Course provides.
+
+Please let me know if there's anything I can do to help you complete the work. I also recommend that you attend the Prework Sessions that happen every week before class starts. It allows you to speak with your teammates, and with graduates of the program to get assistance on specific things that you may be struggling with.
+
+Best regards,
+Your name - Senior Instructor
+```
