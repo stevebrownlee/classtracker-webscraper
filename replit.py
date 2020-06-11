@@ -58,14 +58,14 @@ def find_student_exercises(all_submitted_exercises, student):
 
         if student.name == row[0]:
             if classroom == 'Iteration with JavaScript':
-                student.iteration_exercises.append(exercise)
+                student.iteration_exercises.add(exercise)
             if classroom == 'JavaScript Conditions':
-                student.condition_exercises.append(exercise)
+                student.condition_exercises.add(exercise)
             if classroom == 'JavaScript Functions':
-                student.function_exercises.append(exercise)
+                student.function_exercises.add(exercise)
 
-    student.function_percent = len(student.function_exercises) / FUNCTION_CLASSROOM_EXERCISES
-    student.iteration_percent = len(student.iteration_exercises) / ITERATION_CLASSROOM_EXERCISES
-    student.condition_percent = len(student.condition_exercises) / CONDITIONS_CLASSROOM_EXERCISES
+    student.function_percent = len(student.function_exercises) / FUNCTION_CLASSROOM_EXERCISES * 100
+    student.iteration_percent = len(student.iteration_exercises) / ITERATION_CLASSROOM_EXERCISES * 100
+    student.condition_percent = len(student.condition_exercises) / CONDITIONS_CLASSROOM_EXERCISES * 100
 
     return student

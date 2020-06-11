@@ -19,7 +19,7 @@ def main():
         writer = csv.writer(csvfile)
         writer.writerow(["Student", "repl.it functions", "repl.it iteration", "repl.it conditions", "Codecademy %"])
         for student in student_profiles:
-            writer.writerow([student.name, f'{student.function_percent:.1%}', f'{student.iteration_percent:.1%}', f'{student.condition_percent:.1%}', f'{student.codecademy_percent}%'])
+            writer.writerow([student.name, f'{student.function_percent:.1f}', f'{student.iteration_percent:.1f}', f'{student.condition_percent:.1f}', f'{student.codecademy_percent}'])
 
     # students = []
     # with open('students.tsv') as students_csv:
