@@ -8,5 +8,5 @@ obj
 *.sqlite3
 .vscode
 dist
-credentials.json
-token.pickle
+*credentials.json
+*token.pickle
