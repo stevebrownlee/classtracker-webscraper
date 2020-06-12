@@ -69,7 +69,6 @@ def get_profiles():
 
 
             if studentName in allNames:
-                # print(f'{studentName} {replit_profile} {codecademy_profile}')
                 student = Student()
                 student.name = studentName
                 student.date_submitted = row[1]
