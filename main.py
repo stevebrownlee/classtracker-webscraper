@@ -7,6 +7,8 @@ from profiles import get_profiles
 def main():
     # Get name, replit URL and Codecademy URL from profile submission
     student_profiles = get_profiles()
+    student_profiles.sort(key=lambda s: s.name.split(" ")[0])
+
 
     # Get all replit submissions
     all_submitted_exercises = get_replit_submissions(student_profiles)
