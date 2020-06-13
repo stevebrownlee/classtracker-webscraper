@@ -67,7 +67,6 @@ def get_profiles():
             replit_profile = row[2]
             codecademy_profile = row[3]
 
-
             if studentName in allNames:
                 student = Student()
                 student.name = studentName
