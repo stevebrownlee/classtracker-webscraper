@@ -10,6 +10,10 @@ from fuzzywuzzy import process
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
+VARIABLES_INTRO_CLASSROOM_EXERCISES = 7
+ARRAYS_INTRO_CLASSROOM_EXERCISES = 11
+OBJECTS_INTRO_CLASSROOM_EXERCISES = 7
+FUNCTION_INTRO_CLASSROOM_EXERCISES = 15
 FUNCTION_CLASSROOM_EXERCISES = 6
 ITERATION_CLASSROOM_EXERCISES = 7
 CONDITIONS_CLASSROOM_EXERCISES = 5
@@ -89,9 +93,22 @@ def find_student_exercises(all_submitted_exercises, student):
                 student.condition_exercises.add(exercise)
             if classroom == 'JavaScript Functions':
                 student.function_exercises.add(exercise)
+            if classroom == 'Introduction to Functions':
+                student.functions_intro_exercises.add(exercise)
+            if classroom == 'Introduction to JavaScript Variables':
+                student.variables_intro_exercises.add(exercise)
+            if classroom == 'Introduction to Arrays and Iteration':
+                student.iteration_intro_exercises.add(exercise)
+            if classroom == 'Introduction to Objects':
+                student.objects_intro_exercises.add(exercise)
 
     student.function_percent = len(student.function_exercises) / FUNCTION_CLASSROOM_EXERCISES * 100
     student.iteration_percent = len(student.iteration_exercises) / ITERATION_CLASSROOM_EXERCISES * 100
     student.condition_percent = len(student.condition_exercises) / CONDITIONS_CLASSROOM_EXERCISES * 100
+
+    student.intro_functions_percent = len(student.functions_intro_exercises) / FUNCTION_INTRO_CLASSROOM_EXERCISES * 100
+    student.intro_iteration_percent = len(student.iteration_intro_exercises) / ARRAYS_INTRO_CLASSROOM_EXERCISES * 100
+    student.intro_objects_percent = len(student.objects_intro_exercises) / OBJECTS_INTRO_CLASSROOM_EXERCISES * 100
+    student.intro_variables_percent = len(student.variables_intro_exercises) / VARIABLES_INTRO_CLASSROOM_EXERCISES * 100
 
     return student
