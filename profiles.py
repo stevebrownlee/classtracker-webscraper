@@ -43,7 +43,7 @@ def get_profiles():
         else:
             flow = InstalledAppFlow.from_client_secrets_file(
                 'sheets.credentials.json', SCOPES)
-            creds = flow.run_local_server(port=0)
+            creds = flow.run_local_server(port=8080)
         # Save the credentials for the next run
         with open('sheets.token.pickle', 'wb') as token:
             pickle.dump(creds, token)
